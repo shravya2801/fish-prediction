@@ -21,7 +21,7 @@ def predict():
     output = round(prediction[0], 2)
     print(output)
 
-    return render_template('home.html', prediction_text='Weight will be  $ {}'.format(output))
+    return render_template('home.html', prediction_text='Weight will be {}'.format(output))
 
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
